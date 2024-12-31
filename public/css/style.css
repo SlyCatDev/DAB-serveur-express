@@ -9,14 +9,31 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
-header {
-    background:rgba(0, 123, 255, 0.36);
-    color: white;
-    padding: 1rem;
+h1 a {
+    text-decoration :none;
+    color: #333;
 }
 
-header nav ul {
+/*style global pour le header */
+.main-header {
+    background-color: #f9f9f9; /* Couleur de fond légère */
+    padding: 10px 20px; /* Espacement interne */
+    border-bottom: 2px solid #ddd; /* Légère bordure en bas */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Sépare la logo et la navigation */
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
     list-style: none;
     display: flex;
     gap: 1rem;
@@ -24,11 +41,45 @@ header nav ul {
     padding: 0;
 }
 
-header nav ul li a {
-    color: black;
-    text-decoration: none;
+.nav-list a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #333; /* Couleur du texte */
+    transition: color 0.3s ease;
 }
 
+.nav-list a:hover {
+    color: #007bff;
+}
+
+.header-container{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-login {
+    margin-left: auto;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn-logout{
+    margin-left: auto;
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* style pour le main et footer */
 main {
     padding: 2rem;
     text-align: center;
@@ -88,29 +139,4 @@ form button {
 
 form button:hover {
     background: #0056b3;
-}
-
-.btn-login {
-    display: inline-block;
-    padding: 10px 20px; /* Espacement autour du texte */
-    border: 2px solid #007bff; /* Bordure bleue */
-    border-radius: 20px; /* Coins arrondis */
-    color: #007bff; /* Couleur du texte */
-    font-family: Arial, sans-serif; /* Police du texte */
-    font-size: 16px; /* Taille du texte */
-    text-decoration: none; /* Supprime le soulignement */
-    transition: all 0.3s ease; /* Animation fluide */
-}
-
-/* Effet au survol */
-.btn-login:hover {
-    background-color: #007bff; /* Fond bleu au survol */
-    color: #ffffff; /* Texte blanc au survol */
-    cursor: pointer; /* Curseur en main */
-}
-
-.header-container {
-    display: flex; /* Utilise Flexbox */
-    justify-content: flex-end; /* Alignement à droite */
-    padding: 10px; /* Espacement autour */
 }
