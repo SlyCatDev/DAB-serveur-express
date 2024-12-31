@@ -16,25 +16,20 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 ### Étape 1 : Clonez le projet
 Clonez ce dépôt Git sur votre machine locale :
-``bash
-git clone https://github.com/votre-utilisateur/votre-repo.git
+`` git clone https://github.com/votre-utilisateur/votre-repo.git ``
 
 ### Étape 2 : Accédez au dossier du projet
 
-``bash 
-cd votre-repo
+`` cd votre-repo ``
 
 ### Étape 3 : Installez les dépendances
 
-``bash 
-npm install
+`` npm install ``
 
 ### Étape 4 : Lancer le projet en mode prod
 
-``bash
-npm start 
+`` npm start ``
 
 ## ou Lancer le projet avec rechargement automatique (si nodemon est configuré)
 
-``bash
-npm run dev
+`` npm run dev ``
