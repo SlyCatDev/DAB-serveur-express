@@ -1,7 +1,7 @@
 import express from 'express';
 import session from 'express-session';
 import routes from './routes/index.js';
-
+import dabRoutes from './routes/dab.js';
 
 const app = express();
 const PORT = 8080;
@@ -32,6 +32,8 @@ app.use((req, res, next) => {
 
 // Utilisation des routes
 app.use('/', routes);
+app.use('/dab', dabRoutes);
+
 
 // Gestion des routes inexistantes (404)
 app.use((req, res) => {
