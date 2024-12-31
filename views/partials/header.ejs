@@ -1,0 +1,23 @@
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+<header>
+    <!--<h2>Appli Express</h2>-->
+    <nav>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/about">À propos</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/404">Page Erreur</a></li>
+
+            <div class="header-container">
+            <% if (login) { %>
+                <li><a href="/admin">Admin</a></li>
+                <div class="header-container">
+                <li><a href="/logout" class="btn-login">Se déconnecter</a></li>
+            <% } else { %>
+                <li><a href="/login" class="btn-login">S'identifier</a></li>
+            <% } %>
+                </div>
+        </ul>
+    </nav>
+</header>
