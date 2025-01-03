@@ -34,7 +34,6 @@ app.use((req, res, next) => {
 app.use('/', routes);
 app.use('/dab', dabRoutes);
 
-
 // Gestion des routes inexistantes (404)
 app.use((req, res) => {
     res.status(404).render('404', { title: 'Erreur 404' });
